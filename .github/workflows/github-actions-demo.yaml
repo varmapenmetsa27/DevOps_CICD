@@ -20,8 +20,8 @@ jobs:
 
     - name: Build Container
       run: |
-        podman build -t my-container .
+        podman -v
 
     - name: Run Container
       run: |
-        podman run -d -p 8080:80 my-container
+        podman -version
